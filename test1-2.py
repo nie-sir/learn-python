@@ -1,4 +1,4 @@
-# -*- encoding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
 #姓名：聂朝刚
 #学号：1403050114
@@ -18,6 +18,6 @@ print f5
 g5=math.exp(3)
 print g5
 
-# -*- encoding:utf-8 -*-
+# -*- coding:utf-8 -*-
 print '近似导数：',f5
 print '精确导数值：',g5
