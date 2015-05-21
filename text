@@ -1,0 +1,29 @@
+digraph G  {
+    edge [fontname="FangSong"]
+	node [shape=box, fontname="FangSong" size="20,20"]
+	A  [label = "皇     帝" color=Gold,style=filled,fontcolor=Blue,fontsize=24,shape=house]     // node A
+	B  [label = "太    尉" color=Red,style=filled,fontcolor=Black,fontsize=24,shape=house]    // node B
+	C  [label = "丞    相" color=Red,style=filled,fontcolor=Black,fontsize=24,shape=house]    //node C
+	D  [label = "御史大夫" color=Red,style=filled,fontcolor=Black,fontsize=24,shape=house]  //node D
+	E  [label = "奉常" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  // node E
+	F  [label = "郎中令" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  // node F
+	G  [label = "衙蔚" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  // node G
+	H  [label = "太僕" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  //  node H
+	I  [label = "廷尉" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  // node I
+	J  [label = "典客" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  // node J
+	K  [label = "宗正" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  // node K
+	L  [label = "治栗内史" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  //node L
+	M  [label = "少府" color=Green,style=filled,fontcolor=Red,fontsize=24,shape=box]  // node M
+	N  [label = "郡" color=SkyBlue,style=filled,fontcolor=Red,fontsize=24,shape=circle]  // node N
+	O  [label = "县" color=SkyBlue,style=filled,fontcolor=Red,fontsize=24,shape=circle]  // node O
+	A->{B,C,D} [label="三公" color=Blue,fontcolor=Red] // edge A->{B,C,D}
+	B->{E,F,G,H,I,J,K,L,M} [label="九卿" color=yellowgreen,fontcolor=darkgreen] // edge B->{E,F,G,H,I,J,K,L,M}
+	D->{E,F,G,H,I,J,K,L,M} [label="九卿" color="crimson", style="dashed",fontcolor=darkgreen] // edge D->{E,F,G,H,I,J,K,L,M}
+	E->N [style="dashed", color="forestgreen"] // edge E->N
+	M->N [style="dashed", color="forestgreen"] // edge M->N
+	N->O [fontcolor=Black] // edge N->O
+}
+
+                          
+					 整理数据以及编写代码：聂朝刚
+					 撰写报告以及答辩演讲：陈晓军
