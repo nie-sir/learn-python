@@ -1,0 +1,14 @@
+file = open("xx.gv","w")
+file.write("digraph G { \n" )
+D = [
+		[1 , 1 , 2],
+		[2 , 1 , 3],
+		[3 , 2 , 3],
+		[4 , 2 , 4],
+		[5 , 3 , 4],
+		[6 , 1 , 4]
+]
+for d in D:
+	file.write("%d->%d[label = %d]\n"%(d[1],d[2],d[0]))
+file.write("} \n")
+
